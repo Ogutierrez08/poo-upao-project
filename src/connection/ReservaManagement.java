@@ -6,7 +6,7 @@ import java.util.Scanner;
 import models.Reserva;
 
 public class ReservaManagement {
-    LinkedList<Reserva> list; 
+    private LinkedList<Reserva> list; 
 
     public ReservaManagement() { 
         list = new LinkedList<>(); // le esta asignando un espacio de memoria

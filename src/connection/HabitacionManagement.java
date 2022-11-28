@@ -6,7 +6,7 @@ import java.util.Scanner;
 import models.Habitacion;
 
 public class HabitacionManagement {
-    LinkedList<Habitacion> list; 
+    private LinkedList<Habitacion> list; 
 
     public HabitacionManagement() {
         list = new LinkedList<>(); // le esta asignando un espacio de memoria
@@ -86,7 +86,7 @@ public class HabitacionManagement {
             System.out.print(
                     "Ingresa la nuevo Estado? ");
             char estado = input.next().charAt(0);
-                
+
             hab.setTipoHabitación(tipoHbaitacion);
             hab.setPrecio(precio);
             hab.setEstado(estado);

@@ -6,7 +6,7 @@ import java.util.Scanner;
 import models.Huesped;
 
 public class HuespedManagement {
-    LinkedList<Huesped> list; 
+    private LinkedList<Huesped> list; 
 
     public HuespedManagement() { 
         list = new LinkedList<>(); // le esta asignando un espacio de memoria

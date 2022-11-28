@@ -6,7 +6,7 @@ import java.util.Scanner;
 import models.Usuario;
 
 public class UsuarioManagement {
-    LinkedList<Usuario> list; 
+    private LinkedList<Usuario> list; 
     public UsuarioManagement() { 
         list = new LinkedList<>(); 
     }
