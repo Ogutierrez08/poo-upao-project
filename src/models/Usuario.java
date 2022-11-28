@@ -1,15 +1,15 @@
 package models;
 
 public class Usuario {
-    private String dni;
+    private int dni;
     private String nombre;
     private String apellido;
-    private String edad;
+    private int edad;
     private String sexo;
     private String direccion;
     private String contraseña;
-
-    public Usuario(String dni, String nombre, String apellido, String edad, String sexo, String direccion,
+    
+    public Usuario(int dni, String nombre, String apellido, int edad, String sexo, String direccion,
             String contraseña) {
         this.dni = dni;
         this.nombre = nombre;
@@ -20,11 +20,11 @@ public class Usuario {
         this.contraseña = contraseña;
     }
 
-    public String getDni() {
+    public int getDni() {
         return dni;
     }
 
-    public void setDni(String dni) {
+    public void setDni(int dni) {
         this.dni = dni;
     }
 
@@ -44,11 +44,11 @@ public class Usuario {
         this.apellido = apellido;
     }
 
-    public String getEdad() {
+    public int getEdad() {
         return edad;
     }
 
-    public void setEdad(String edad) {
+    public void setEdad(int edad) {
         this.edad = edad;
     }
 
@@ -76,6 +76,11 @@ public class Usuario {
         this.contraseña = contraseña;
     }
 
-    
+    @Override
+    public String toString() {
+        return "Usuario [dni=" + dni + ", nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + ", sexo="
+                + sexo + ", direccion=" + direccion + ", contraseña=" + contraseña + "]";
+    }
+
     
 }

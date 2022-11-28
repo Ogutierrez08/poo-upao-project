@@ -5,7 +5,7 @@ public class Reserva {
     private String fecIngreso;
     private String fecSalida;
     private int nroDias;
-    private int CantidadPersonas;
+    private int cantidadPersonas;
     private int tipoHabitación;
 
     public Reserva(int codigo, String fecIngreso, String fecSalida, int nroDias, int cantidadPersonas,
@@ -14,7 +14,7 @@ public class Reserva {
         this.fecIngreso = fecIngreso;
         this.fecSalida = fecSalida;
         this.nroDias = nroDias;
-        CantidadPersonas = cantidadPersonas;
+        this.cantidadPersonas = cantidadPersonas;
         this.tipoHabitación = tipoHabitación;
     }
 
@@ -51,11 +51,11 @@ public class Reserva {
     }
 
     public int getCantidadPersonas() {
-        return CantidadPersonas;
+        return cantidadPersonas;
     }
 
     public void setCantidadPersonas(int cantidadPersonas) {
-        CantidadPersonas = cantidadPersonas;
+        this.cantidadPersonas = cantidadPersonas;
     }
 
     public int getTipoHabitación() {
@@ -66,4 +66,11 @@ public class Reserva {
         this.tipoHabitación = tipoHabitación;
     }
 
+    @Override
+    public String toString() {
+        return "Reserva [codigo=" + codigo + ", fecIngreso=" + fecIngreso + ", fecSalida=" + fecSalida + ", nroDias="
+                + nroDias + ", cantidadPersonas=" + cantidadPersonas + ", tipoHabitación=" + tipoHabitación + "]";
+    }
+
+    
 }

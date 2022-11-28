@@ -6,7 +6,7 @@ public class Huesped extends Usuario {
     private String fecLlegada;
     private String fecSalida;
 
-    public Huesped(String dni, String nombre, String apellido, String edad, String sexo, String direccion,
+    public Huesped(int dni, String nombre, String apellido, int edad, String sexo, String direccion,
             String contraseña, int codigoHuesped, String correo, String fecLlegada, String fecSalida) {
         super(dni, nombre, apellido, edad, sexo, direccion, contraseña);
         this.codigoHuesped = codigoHuesped;

@@ -4,13 +4,21 @@ public class Empleado extends Usuario {
     private int codigoEmpleado;
     private double sueldo;
     private String categoria;
-
-    public Empleado(String dni, String nombre, String apellido, String edad, String sexo, String direccion,
+    
+    public Empleado(int dni, String nombre, String apellido, int edad, String sexo, String direccion,
             String contraseña, int codigoEmpleado, double sueldo, String categoria) {
         super(dni, nombre, apellido, edad, sexo, direccion, contraseña);
         this.codigoEmpleado = codigoEmpleado;
         this.sueldo = sueldo;
         this.categoria = categoria;
+    }
+
+    public int getCodigoEmpleado() {
+        return codigoEmpleado;
+    }
+
+    public void setCodigoEmpleado(int codigoEmpleado) {
+        this.codigoEmpleado = codigoEmpleado;
     }
 
     public double getSueldo() {
@@ -29,16 +37,10 @@ public class Empleado extends Usuario {
         this.categoria = categoria;
     }
 
-    public int getCodigoEmpleado() {
-        return codigoEmpleado;
-    }
-
-    public void setCodigoEmpleado(int codigoEmpleado) {
-        this.codigoEmpleado = codigoEmpleado;
-    }
-
+    @Override
     public String toString() {
         return "Empleado [codigoEmpleado=" + codigoEmpleado + ", sueldo=" + sueldo + ", categoria=" + categoria + "]";
     }
 
+    
 }

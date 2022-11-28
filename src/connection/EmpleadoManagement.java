@@ -1,21 +1,23 @@
-package functions;
+package connection;
 
-import java.util.LinkedList;
-import java.util.Scanner;
+import java.util.LinkedList; // paquete para manejar listar de objetos 
+import java.util.Scanner; //paquete para manejar imputs desde consola
 
 import models.Empleado;
 
 public class EmpleadoManagement {
-    LinkedList<Empleado> list;
+    private LinkedList<Empleado> list; // Variable de nombre List cuyo tipo es Linkedlist<Empleado>
+    // = new
 
     public EmpleadoManagement() {
-        list = new LinkedList<>();
+        list = new LinkedList<>(); // le esta asignando un espacio de memoria
     }
 
     public void add(Empleado empleado) {
 
-        if (!find(empleado.getCodigoEmpleado())) {
-            list.add(empleado);
+        if (!find(empleado.getCodigoEmpleado())) { // Simula la busqueda en BD de un empleado
+                                                   // Sp_BuscarEmpleado(codigoEmpleado)
+            list.add(empleado); // Simulación de una base de datos SP_InsertarEmpleado(Empleado)
         } else {
 
             System.out.println(
@@ -96,12 +98,12 @@ public class EmpleadoManagement {
 
             System.out.print(
                     "Ingresa el nuevo dni? ");
-            String dni = input.nextLine();
-
+            int dni = input.nextInt();
+            input.nextLine();
             System.out.print(
                     "Ingresa la nueva edad? ");
-            String edad = input.nextLine();
-
+            int edad = input.nextInt();
+            input.nextLine();
             System.out.print(
                     "Ingresa el nuevo sexo? ");
             String sexo = input.nextLine();
@@ -120,11 +122,11 @@ public class EmpleadoManagement {
             emp.setSexo(sexo);
             emp.setSueldo(sueldo);
             System.out.println(
-                    "Record Updated Successfully");
+                    "Se actualizo el empleado satisfactoriamente");
         } else {
 
             System.out.println(
-                    "Record Not Found in the Student list");
+                    "El codigo ingresado no se encuentra en la lista de empleados");
         }
     }
 

@@ -45,4 +45,10 @@ public class Habitacion {
         this.estado = estado;
     }
 
+    @Override
+    public String toString() {
+        return "Habitacion [numeroHabitacion=" + numeroHabitacion + ", tipoHabitación=" + tipoHabitación + ", precio="
+                + precio + ", estado=" + estado + "]";
+    }
+    
 }
