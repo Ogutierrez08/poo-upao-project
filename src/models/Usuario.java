@@ -8,7 +8,7 @@ public class Usuario {
     private String sexo;
     private String direccion;
     private String contraseña;
-    
+
     public Usuario(int dni, String nombre, String apellido, int edad, String sexo, String direccion,
             String contraseña) {
         this.dni = dni;
@@ -78,9 +78,14 @@ public class Usuario {
 
     @Override
     public String toString() {
-        return "Usuario [dni=" + dni + ", nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + ", sexo="
-                + sexo + ", direccion=" + direccion + ", contraseña=" + contraseña + "]";
+        return "Información de Usuario: " + "\n" 
+                + "Dni: " + dni + "\n"
+                + "Nombre: " + nombre + "\n"
+                + "Apellido: " + apellido +"\n"
+                + "Edad: " + edad +"\n" 
+                + "Sexo: " + sexo +"\n" 
+                + "Direccion: " + direccion + "\n"
+                + "Contraseña: " + contraseña + "\n";
     }
 
-    
 }

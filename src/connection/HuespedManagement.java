@@ -77,7 +77,7 @@ public class HuespedManagement {
             System.out.print(
                     "Ingresa el nuevo Tipo de correo ? ");
             String correo = input.nextLine();
-
+            input.nextLine();
             System.out.print(
                     "Ingresa la nueva fecha de llegada ");
             String fecLlegada = input.nextLine();

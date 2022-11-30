@@ -48,8 +48,11 @@ public class Huesped extends Usuario {
     }
 
     public String toString() {
-        return "Huesped [codigoHuesped=" + codigoHuesped + ", correo=" + correo + ", fecLlegada=" + fecLlegada
-                + ", fecSalida=" + fecSalida + "]";
+        return "Información de Huespedes : " + "\n" 
+                + "CodigoHuesped=" + codigoHuesped + "\n" 
+                + "Correo=" + correo + "\n"
+                + "FecLlegada=" + fecLlegada +"\n"
+                + "FecSalida=" + fecSalida + "\n";
     }
 
 }

@@ -40,6 +40,7 @@ public class menuUsuario {
                             "Ingresa el  sexo? ");
                     String sexo = input.nextLine();
 
+                    input.nextLine();
                     System.out.print(
                             "Ingresa la  contraseña? ");
                     String password = input.nextLine();

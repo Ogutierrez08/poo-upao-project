@@ -68,9 +68,13 @@ public class Reserva {
 
     @Override
     public String toString() {
-        return "Reserva [codigo=" + codigo + ", fecIngreso=" + fecIngreso + ", fecSalida=" + fecSalida + ", nroDias="
-                + nroDias + ", cantidadPersonas=" + cantidadPersonas + ", tipoHabitación=" + tipoHabitación + "]";
+        return "Información de Reservas : " + "\n" 
+                + "Codigo: " + codigo  + "\n"
+                + "FecIngreso: " + fecIngreso + "\n"
+                + "FecSalida: " + fecSalida + "\n"
+                + "NroDias: " + nroDias  + "\n"
+                + "CantidadPersonas: " + cantidadPersonas + "\n"
+                + "TipoHabitación: " + tipoHabitación + "\n";
     }
 
-    
 }

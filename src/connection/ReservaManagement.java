@@ -77,7 +77,7 @@ public class ReservaManagement {
             System.out.print(
                     "Ingresa la nueva fecha de Ingreso ? ");
             String fecIngreso = input.nextLine();
-
+            input.nextLine();
             System.out.print(
                     "Ingresa la nueva fecha de Salida ");
             String fecSalida = input.nextLine();

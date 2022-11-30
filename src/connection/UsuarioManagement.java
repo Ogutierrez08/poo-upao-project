@@ -76,7 +76,7 @@ public class UsuarioManagement {
             System.out.print(
                     "Ingresa el nuevo nombre ? ");
             String name = input.nextLine();
-
+            input.nextLine();
             System.out.print(
                     "Ingresa el nuevo apellido ");
             String apellido = input.nextLine();
